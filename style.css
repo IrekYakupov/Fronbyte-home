@@ -61,7 +61,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 0px solid white;
+  border: 0px solid #f4f4f7;
   box-sizing: border-box;
 }
 
@@ -76,5 +76,23 @@
   margin-left: 50%;
   margin-top: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #f4f4f7;
+}
+
+.introduction {
+  width: 780px;
+  font-size: 61px;
+  color: #f4f4f7;
+  font-weight: 900;
+  line-height: 1.08;
+  margin: 0 auto 30px;
+}
+
+.introduction__motto {
+  width: 680px;
+  font-size: 20px;
+  color: #f4f4f7;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-top: 30px
 }
