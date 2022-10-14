@@ -61,7 +61,7 @@
   display: flex;
 }
 
-.list-item:not(:nth-child(6)) {
+.list-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -160,22 +160,22 @@
 
 .advantage {
   width: 780px;
-  margin: 0 auto;
+  margin: 0 auto 85px;
   font-size: 30px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #2d2d42;
 }
 
-.card-project {
+.card {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: #63c9e0;
   position: relative;
+  margin-bottom: 30px;
+}
+
+.card-project {
+  background-color: #63c9e0;
 }
 
 .card-project::after {
@@ -184,4 +184,49 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.card-management {
+  background-color: #f47e3d;
+}
+
+.card-management::after {
+  content: url('/img/management.svg');
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-digital {
+  background-color: #d04b9b;
+}
+
+.card-digital::after {
+  content: url('/img/ic-digital.svg');
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tools {
+  display: flex;
+  width: 780px;
+  margin: 0 auto;
+}
+
+.tools__card:not(:last-child) {
+  margin-right: 60px;
+}
+
+.card__discription {
+  width: 240px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #2d2d42;
 }
