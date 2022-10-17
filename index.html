@@ -2,96 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontbyte</title>
     <link rel="stylesheet" href="style.css" />
-    <link type="Image/x-icon" href="/img/favicon.svg" rel="icon">
+    <link type="Image/x-icon" href="/img/favicon.svg" rel="icon" />
   </head>
   <body>
-    <div class="b-container splash-screen">
-         <!-- Начинается header -->
-            <header class="header">
-                <div class="logo">
-                    <img src="/img/img-logo-desktop-light.svg" alt=""/>
-                </div>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="list-item"><a class="list-item__link" href="#">About</a></li>
-                        <li class="list-item"><a class="list-item__link" href="#">Projects</a></li>
-                        <li class="list-item"><a class="list-item__link" href="#">Services</a></li>
-                        <li class="list-item"><a class="list-item__link" href="#">Our team</a></li>
-                        <li class="list-item"><a class="list-item__link" href="#">Events</a></li>
-                        <li class="list-item"><a class="list-item__link" href="#">Contacts</a></li>
-                    </ul>
-                </nav>
-                <div class="language-switcher">
-                    <div class="button-wrap">
-                        <button class="button-language">No</button>
-                    </div>
-                    <div class="button-wrap">
-                        <button class="button-language">En</button>
-                    </div>
-                    <div class="button-wrap">
-                        <button class="button-language">Ru</button>
-                    </div>
-                </div>
-            </header>
+    <div class="b-container">
+      <div class="b-introduction">
+        <img
+          class="b-introduction__splash-screen"
+          src="/img/splash-screen.png"
+          alt=""
+        />
+
+        <!-- Начинается header -->
+        <header class="b-header">
+          <div class="b-logo">
+            <img src="/img/img-logo-desktop-light.svg" alt="" />
+          </div>
+          <nav class="b-nav">
+            <ul class="b-nav__list">
+              <li class="b-list-item">
+                <a class="b-list-item__link" href="javascript:void(0)">About</a>
+              </li>
+              <li class="b-list-item">
+                <a class="b-list-item__link" href="javascript:void(0)"
+                  >Projects</a
+                >
+              </li>
+              <li class="b-list-item">
+                <a class="b-list-item__link" href="javascript:void(0)"
+                  >Services</a
+                >
+              </li>
+              <li class="b-list-item">
+                <a class="b-list-item__link" href="javascript:void(0)"
+                  >Our team</a
+                >
+              </li>
+              <li class="b-list-item">
+                <a class="b-list-item__link" href="javascript:void(0)"
+                  >Events</a
+                >
+              </li>
+              <li class="b-list-item">
+                <a class="b-list-item__link" href="javascript:void(0)"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="b-language-switcher">
+            <div class="b-button-wrap">
+              <button class="b-button-language">No</button>
+            </div>
+            <div class="b-button-wrap">
+              <button class="b-button-language">En</button>
+            </div>
+            <div class="b-button-wrap">
+              <button class="b-button-language">Ru</button>
+            </div>
+          </div>
+        </header>
         <!-- Заканчивается header -->
 
-        <section class="introduction">
-            <p>We provide digital services
-            and develop our own products in sports and iHealth industry</p>
-
-            <p class="introduction__motto">We put technology and sport together to create the world's most efficient 
-                and popular sports apps.</p>
+        <section class="b-our-concept">
+          <h1 class="b-our-concept__direction">
+            We provide digital servicesand develop our own products in sports
+            and iHealth industry
+          </h1>
+          <p class="b-our-concept__goal">
+            We put technology and sport together to create the world's most
+            efficient and popular sports apps.
+          </p>
         </section>
 
-        <!-- <button class="call__button">
-            <span class="call">Drop us a line</span>
-            <span class="button__arrow"></span>
-        </button> -->
-
-        <!-- <button>Drop us a line</button> -->
-
-        <button class="call-button">
-            <span>Drop us a line</span>
+        <button class="b-call-button">
+          <span class="b-button-text">Drop us a line</span>
+          <span><img src="/img/ic-next.svg" alt="" /></span>
         </button>
+      </div>
     </div>
 
-    <div class="b-container container-white">
-        <p class="our-approach">We combine high level of professionalism and individual approach</p>
-        <p class="advantage">We have subject domain expertise in various aspects</p>
+    <div class="b-container">
+      <div class="b-container-light">
+        <p class="b-our-approach">
+          We combine high level of professionalism and individual approach
+        </p>
+        <p class="b-advantage">
+          We have subject domain expertise in various aspects
+        </p>
 
-        <div class="tools">
-            <div class="tools__card">
-                <div class="card card-project"></div>
-                <p class="card__discription">Project management for simple and complex projects</p>
-            </div>
-            <div class="tools__card">
-                <div class="card card-management"></div>
-                <p class="card__discription">Management for hire</p>
-            </div>
-            <div class="tools__card">
-                <div class="card card-digital"></div>
-                <p class="card__discription">Digital transformation</p>
-            </div>
+        <div class="b-tools">
+          <div class="b-tools__card">
+            <div class="b-card b-card-project"></div>
+            <p class="b-card__discription">
+              Project management for simple and complex projects
+            </p>
+          </div>
+          <div class="b-tools__card">
+            <div class="b-card b-card-management"></div>
+            <p class="b-card__discription">Management for hire</p>
+          </div>
+          <div class="b-tools__card">
+            <div class="b-card b-card-digital"></div>
+            <p class="b-card__discription">Digital transformation</p>
+          </div>
         </div>
 
-        <div class="our-services">
-            <p class="our-sevices__header">What We Do</p>
+        <div class="b-our-services">
+          <p class="b-our-sevices__header">What We Do</p>
 
-            <ul class="our-sevices__services">
-                <li class="services__item">Development and support of new and existing software systems</li>
-                <li class="services__item">Deep analytics in various spheres</li>
-                <li class="services__item">Insights-driven solutions</li>
-                <li class="services__item">Agile product engineering</li>
-                <li class="services__item">Quality Assurance for new and existing products</li>
-                <li class="services__item">Data collection, research and analysis</li>
-                <li class="services__item">UX/UI concepts and design</li>
-                <li class="services__item">Video and motion design</li>
-            </ul>
+          <ul class="b-our-sevices__services">
+            <li class="b-services__item">
+                <span class="dash"></span>
+              Development and support of new and existing software systems
+            </li>
+            <li class="b-services__item">
+                <span class="dash"></span>
+                Deep analytics in various spheres</li>
+            <li class="b-services__item">Insights-driven solutions</li>
+            <li class="b-services__item">Agile product engineering</li>
+            <li class="b-services__item">
+              Quality Assurance for new and existing products
+            </li>
+            <li class="b-services__item">
+              Data collection, research and analysis
+            </li>
+            <li class="b-services__item">UX/UI concepts and design</li>
+            <li class="b-services__item">Video and motion design</li>
+          </ul>
         </div>
+      </div>
+    </div>
+
+    
 
     </div>
   </body>

@@ -1,24 +1,21 @@
 @font-face {
-  font-family: 'Roboto';
-  src:
-      url('/fonts/Roboto-Bold.woff2') format('woff2'),
-      url('/fonts/Roboto-Bold.woff') format('woff');
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("/fonts/Roboto-Bold.woff") format("woff");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src:
-      url('/fonts/Roboto-Black.woff2') format('woff2'),
-      url('/fonts/Roboto-Black.woff') format('woff');
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Black.woff2") format("woff2"),
+    url("/fonts/Roboto-Black.woff") format("woff");
   font-weight: 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto';
-  src:
-      url('/fonts/Roboto-Light.woff2') format('woff2'),
-      url('/fonts/Roboto-Light.woff') format('woff');
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Light.woff2") format("woff2"),
+    url("/fonts/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-display: swap;
 }
@@ -28,7 +25,7 @@ body {
 }
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -40,12 +37,13 @@ body {
   margin-bottom: 100px;
 }
 
-.splash-screen {
-  background-image: url(/img/img-header.png);
-  background-repeat: no-repeat;
+.b-introduction__splash-screen {
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.5);
 }
 
-.header {
+.b-header {
   display: flex;
   align-items: center;
   padding-top: 40px;
@@ -53,31 +51,31 @@ body {
   margin-bottom: 92px;
 }
 
-.logo {
+.b-logo {
   margin-right: 120px;
 }
 
-.nav__list {
+.b-nav__list {
   list-style-type: none;
   display: flex;
 }
 
-.list-item:not(:last-child) {
+.b-list-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.list-item__link {
+.b-list-item__link {
   text-decoration: none;
   color: #f4f4f7;
 }
 
-.language-switcher {
+.b-language-switcher {
   display: flex;
   margin-left: auto;
   margin-right: 60px;
 }
 
-.button-wrap {
+.b-button-wrap {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -85,12 +83,12 @@ body {
   box-sizing: border-box;
 }
 
-.button-wrap:hover {
+.b-button-wrap:hover {
   border-width: 1px;
   /* transition: border-width 2s ease-in; */
 }
 
-.button-language {
+.b-button-language {
   background-color: transparent;
   border: none;
   margin-left: 50%;
@@ -99,8 +97,12 @@ body {
   color: #f4f4f7;
 }
 
-.introduction {
+.b-our-concept {
   width: 780px;
+  margin: 0 auto 78px;
+}
+
+.b-our-concept__direction {
   font-size: 60px;
   font-weight: 900;
   line-height: 1.08;
@@ -109,63 +111,35 @@ body {
   color: #f4f4f7;
 }
 
-.introduction__motto {
-  width: 672px;
+.b-our-concept__goal {
+  width: 671px;
   font-size: 20px;
-  font-weight: 300;
-  font-stretch: normal;
-  letter-spacing: normal;
-  line-height: 1.5;
-  padding-top: 30px;
   line-height: 1.5;
   color: #f4f4f7;
-  margin-bottom: 78px;
 }
 
-.call-button {
+.b-call-button {
   padding: 25px 100px 25px 200px;
   background-color: transparent;
-  color: #f4f4f7;
   border: 1px solid #ffffff;
-  /* opacity: 0.1; */
+  opacity: 0.1;
 }
 
-/* .call-button span {
-  opacity: 1;
-} */
-
-/* .call__button {
-  padding: 25px 0;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-} */
-
-/* .call {
+/* .button-text {
   display: inline-block;
-  padding: 25px 0px 25px 200px;
-} */
+  width: 280px;
+  height: 30px;
+  margin: 0 20px 0 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f4f4f7;
+}*/
 
-/* .button__arrow {
-  display: inline-block;
-  background-image: url(/img/ic-next.svg);
-  width: 30px;
-  height: 20px;
-} */
-
-/* button {
-  padding: 25px 200px;
-} */
-
-/* button::after {
-  content: url('img/ic-next.svg');
-} */
-
-.container-white {
+.b-container-light {
   background-color: #ffffff;
 }
 
-.our-approach {
+.b-our-approach {
   width: 780px;
   font-size: 60px;
   font-weight: 900;
@@ -176,7 +150,7 @@ body {
   padding-top: 90px;
 }
 
-.advantage {
+.b-advantage {
   width: 780px;
   margin: 0 auto 85px;
   font-size: 30px;
@@ -184,7 +158,7 @@ body {
   color: #2d2d42;
 }
 
-.card {
+.b-card {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -192,53 +166,53 @@ body {
   margin-bottom: 30px;
 }
 
-.card-project {
+.b-card-project {
   background-color: #63c9e0;
 }
 
-.card-project::after {
-  content: url('img/ic-project.svg');
+.b-card-project::after {
+  content: url("img/ic-project.svg");
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.card-management {
+.b-card-management {
   background-color: #f47e3d;
 }
 
-.card-management::after {
-  content: url('/img/management.svg');
+.b-card-management::after {
+  content: url("/img/management.svg");
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.card-digital {
+.b-card-digital {
   background-color: #d04b9b;
 }
 
-.card-digital::after {
-  content: url('/img/ic-digital.svg');
+.b-card-digital::after {
+  content: url("/img/ic-digital.svg");
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.tools {
+.b-tools {
   display: flex;
   width: 780px;
   margin: 0 auto 70px;
 }
 
-.tools__card:not(:last-child) {
+.b-tools__card:not(:last-child) {
   margin-right: 60px;
 }
 
-.card__discription {
+.b-card__discription {
   width: 240px;
   font-size: 20px;
   font-weight: bold;
@@ -249,11 +223,11 @@ body {
   color: #2d2d42;
 }
 
-.our-services {
+.b-our-services {
   padding-bottom: 137px;
 }
 
-.our-sevices__header {
+.b-our-sevices__header {
   width: 780px;
   font-size: 60px;
   font-weight: 900;
@@ -263,18 +237,29 @@ body {
   color: #c0c6c8;
 }
 
-.our-sevices__services {
+.b-our-sevices__services {
   column-count: 2;
   width: 780px;
   height: 240px;
   margin: 0 auto;
 }
 
-.services__item {
+.dash {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: #d04b9b;
+  position: absolute;
+  left: -15%;
+  top: 20%;
+}
+
+.b-services__item {
   list-style-type: none;
   width: 380px;
   margin-bottom: 30px;
   font-size: 20px;
   line-height: 1.5;
   color: #2d2d42;
+  position: relative;
 }
