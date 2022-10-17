@@ -137,6 +137,7 @@ body {
 
 .b-container-light {
   background-color: #ffffff;
+  padding: 90px 200px 137px;
 }
 
 .b-our-approach {
@@ -147,7 +148,6 @@ body {
   letter-spacing: -0.75px;
   color: #2d2d42;
   margin: 0 auto 30px;
-  padding-top: 90px;
 }
 
 .b-advantage {
@@ -223,11 +223,9 @@ body {
   color: #2d2d42;
 }
 
-.b-our-services {
-  padding-bottom: 137px;
-}
 
-.b-our-sevices__header {
+
+.b-our-sevice__header {
   width: 780px;
   font-size: 60px;
   font-weight: 900;
@@ -237,14 +235,15 @@ body {
   color: #c0c6c8;
 }
 
-.b-our-sevices__services {
+.b-our-sevice__service {
   column-count: 2;
+  column-gap: 180px;
   width: 780px;
   height: 240px;
   margin: 0 auto;
 }
 
-.dash {
+/* .dash {
   display: inline-block;
   width: 30px;
   height: 1px;
@@ -252,9 +251,19 @@ body {
   position: absolute;
   left: -15%;
   top: 20%;
+} */
+
+.b-service__item::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -60px;
+  width: 30px;
+  height: 1px;
+  background-color: #64cae1;
 }
 
-.b-services__item {
+.b-service__item {
   list-style-type: none;
   width: 380px;
   margin-bottom: 30px;
@@ -270,13 +279,14 @@ body {
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -0.75px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
   color: #2d2d42;
 }
 
 .b-porfolio__concept {
-  margin: 25px 0 90px 200px;
+  width: 780px;
   font-size: 30px;
   line-height: 1.33;
+  margin: 0 auto;
   color: #2d2d42;
 }
