@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: #c0c6c8;
+  background-color: #f4f4f7;
 }
 
 * {
@@ -262,4 +262,21 @@ body {
   line-height: 1.5;
   color: #2d2d42;
   position: relative;
+}
+
+.b-porfolio__header {
+  width: 780px;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.75px;
+  margin: 0 auto;
+  color: #2d2d42;
+}
+
+.b-porfolio__concept {
+  margin: 25px 0 90px 200px;
+  font-size: 30px;
+  line-height: 1.33;
+  color: #2d2d42;
 }
