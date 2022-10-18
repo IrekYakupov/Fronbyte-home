@@ -315,8 +315,13 @@ body {
   color: #f4f4f7;
 }
 
-.other-case__card {
-    display: inline-block;
+.b-portfolio__other-case {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.b-portfolio__other-case div:nth-of-type(add) {
+    margin-right: 20px;
 }
 
 .other-case__link {
