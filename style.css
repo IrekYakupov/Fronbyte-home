@@ -135,7 +135,7 @@ body {
   color: #f4f4f7;
 }*/
 
-.b-container-light {
+.b-container__light {
   background-color: #ffffff;
   padding: 90px 200px 137px;
 }
@@ -223,8 +223,6 @@ body {
   color: #2d2d42;
 }
 
-
-
 .b-our-sevice__header {
   width: 780px;
   font-size: 60px;
@@ -242,16 +240,6 @@ body {
   height: 240px;
   margin: 0 auto;
 }
-
-/* .dash {
-  display: inline-block;
-  width: 30px;
-  height: 1px;
-  background-color: #d04b9b;
-  position: absolute;
-  left: -15%;
-  top: 20%;
-} */
 
 .b-service__item::before {
   content: "";
@@ -273,7 +261,7 @@ body {
   position: relative;
 }
 
-.b-porfolio__header {
+.b-portfolio__header {
   width: 780px;
   font-size: 60px;
   font-weight: 900;
@@ -283,10 +271,75 @@ body {
   color: #2d2d42;
 }
 
-.b-porfolio__concept {
+.b-portfolio__concept {
   width: 780px;
   font-size: 30px;
   line-height: 1.33;
-  margin: 0 auto;
+  margin: 0 auto 90px;
   color: #2d2d42;
+}
+
+.b-portfolio__main-case {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.main-case__sticker {
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  background-color: #64cae1;
+  left: 200px;
+  top: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-case__name {
+  text-transform: uppercase;
+  padding: 40px;
+  width: 300px;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.54;
+  letter-spacing: 1.73px;
+  color: #f4f4f7;
+}
+
+.main-case__discription {
+  width: 300px;
+  font-size: 30px;
+  line-height: 1.33;
+  padding: 0 40px;
+  color: #f4f4f7;
+}
+
+.other-case__card {
+    display: inline-block;
+}
+
+.other-case__link {
+    text-decoration: none;
+}
+
+.other-case__img {
+    margin-bottom: 40px;
+}
+
+.other-case__name {
+    width: 440px;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.54;
+    letter-spacing: 1.73px;
+    margin-bottom: 30px;
+    color: #2d2d42;
+}
+
+.other-case__discription {
+    width: 440px;
+    font-size: 30px;
+    line-height: 1.33;
+    color: #2d2d42;
 }
