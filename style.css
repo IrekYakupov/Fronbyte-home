@@ -269,18 +269,22 @@ body {
   margin-bottom: 20px;
 }
 
-.main-case__sticker {
+.sticker {
   width: 380px;
   height: 380px;
   position: absolute;
-  background-color: #64cae1;
-  left: 200px;
-  top: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.main-case__name {
+.sticker--main-case {
+  background-color: #64cae1;
+  left: 200px;
+  top: 200px;
+  color: #f4f4f7;
+}
+
+.sticker__name {
   text-transform: uppercase;
   padding: 40px;
   width: 300px;
@@ -288,15 +292,13 @@ body {
   font-weight: 900;
   line-height: 1.54;
   letter-spacing: 1.73px;
-  color: #f4f4f7;
 }
 
-.main-case__discription {
+.sticker__discription {
   width: 300px;
   font-size: 30px;
   line-height: 1.33;
   padding: 0 40px;
-  color: #f4f4f7;
 }
 
 .b-portfolio__other-case {
@@ -331,4 +333,19 @@ body {
   font-size: 30px;
   line-height: 1.33;
   color: #2d2d42;
+}
+
+.b-our-team {
+  position: relative;
+}
+
+.sticker--our-team {
+  background-color: #f4f4f7;
+  right: 200px;
+  top: 200px;
+  color: #2d2d42;
+}
+
+.sticker__name--our-name {
+  padding: 40px 40px 50px;
 }
