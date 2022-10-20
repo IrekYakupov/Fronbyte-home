@@ -423,8 +423,57 @@ body {
 
 .footer {
   background-color: #000000;
+  padding-top: 100px;
+  padding-left: 200px;
+  position: relative;
 }
 
 .img-map {
-  margin: 180px 29px 100px 249px;
+  position: absolute;
+  top: 180px;
+  left: 249px;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.contacts__text {
+  font-size: 60px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: -0.75px;
+  color: #f4f4f7;
+  margin-right: 265px;
+}
+
+.social-network__link {
+  margin-right: 25px;
+}
+
+.location__text {
+  width: 380px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f4f4f7;
+}
+
+.location__norway {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #64cae1;
+  position: absolute;
+}
+
+.location__belarus {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d04b9b;
+  position: absolute;
 }
