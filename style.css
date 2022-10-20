@@ -99,7 +99,7 @@ body {
 
 .b-our-concept {
   width: 780px;
-  margin: 0 auto;
+  margin: 0 auto 79px;
 }
 
 .b-our-concept__direction {
@@ -119,9 +119,9 @@ body {
 }
 
 .b-call-button {
-  padding: 25px 100px 25px 200px;
+  padding: 25px 100px 17px 200px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .b-button-text {
@@ -310,6 +310,10 @@ body {
 
 .b-other-case__link {
   text-decoration: none;
+}
+
+.b-other-case__card--margin {
+  margin-right: 20px;
 }
 
 .b-other-case__img {
