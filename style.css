@@ -134,6 +134,10 @@ body {
   color: #f4f4f7;
 }
 
+/* .footer__connection {
+  background-color: #64cae1;
+} */
+
 .b-container__light {
   background-color: #ffffff;
   padding: 90px 200px 137px;
@@ -460,6 +464,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   color: #f4f4f7;
+  margin-bottom: 90px;
 }
 
 .location__norway {
@@ -468,6 +473,8 @@ body {
   border-radius: 50%;
   background-color: #64cae1;
   position: absolute;
+  top: 257px;
+  left: 670px;
 }
 
 .location__belarus {
@@ -476,4 +483,35 @@ body {
   border-radius: 50%;
   background-color: #d04b9b;
   position: absolute;
+  top: 282px;
+  left: 754px;
+}
+
+.footer__address {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.address__norway,
+.address__belarus {
+  width: 380px;
+  font-size: 15px;
+  line-height: 1.67;
+  color: #f4f4f7;
+  margin-right: 118px;
+}
+
+.country {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #f4f4f7;
+}
+
+.email {
+  color: #64cae1;
+}
+
+.b-call-button__footer {
+  background-color: #64cae1;
 }
