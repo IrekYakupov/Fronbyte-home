@@ -99,7 +99,7 @@ body {
 
 .b-our-concept {
   width: 780px;
-  margin: 0 auto 78px;
+  margin: 0 auto;
 }
 
 .b-our-concept__direction {
@@ -409,7 +409,18 @@ body {
   padding: 1px;
 }
 
-.b-slider__item:hover,
+.b-slider__item:hover {
+  background-color: #2d2d42;
+}
+
 .b-slider__item--selected {
   background-color: #2d2d42;
+}
+
+.footer {
+  background-color: #000000;
+}
+
+.img-map {
+  margin: 180px 29px 100px 249px;
 }
