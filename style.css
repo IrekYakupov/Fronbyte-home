@@ -101,7 +101,7 @@ body {
 }
 
 .b-our-concept {
-  padding: 0 200px 79px;
+  padding: 0 200px 75px;
 }
 
 .b-our-concept__direction {
@@ -120,20 +120,23 @@ body {
   color: #f4f4f7;
 }
 
-.b-call-button {
-  padding: 25px 100px 17px 200px;
+.b-button {
   background-color: transparent;
+  padding: 25px 62px 25px 200px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.b-button-text {
+.b-button__text {
   display: inline-block;
   width: 280px;
-  height: 30px;
-  margin: 0 20px 0 0;
   font-size: 20px;
   line-height: 1.5;
   color: #f4f4f7;
+  text-align: start;
+}
+
+.button__arrow {
+  vertical-align: top;
 }
 
 .b-container__light {
@@ -552,30 +555,6 @@ body {
   background-color: #64cae1;
 }
 
-.dog {
-  width: 1000px;
-  height: 500px;
-  background-color: green;
+.b-button--footer {
+  background-color: #64cae1;
 }
-
-.cat {
-  background-color: transparent;
-  padding: 25px 100px 25px 200px;
-}
-
-.cat::after {
-  content: url(/img/ic-next.svg);
-  background-color: #f4f4f7;
-}
-
-.cat__text {
-  display: inline-block;
-  width: 280px;
-  /*height: 30px;
-  margin: 0 20px 0 0; */
-  font-size: 20px;
-  line-height: 1.5;
-  color: #f4f4f7;
-  text-align: start;
-}
-
