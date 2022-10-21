@@ -551,3 +551,31 @@ body {
 .b-call-button__footer {
   background-color: #64cae1;
 }
+
+.dog {
+  width: 1000px;
+  height: 500px;
+  background-color: green;
+}
+
+.cat {
+  background-color: transparent;
+  padding: 25px 100px 25px 200px;
+}
+
+.cat::after {
+  content: url(/img/ic-next.svg);
+  background-color: #f4f4f7;
+}
+
+.cat__text {
+  display: inline-block;
+  width: 280px;
+  /*height: 30px;
+  margin: 0 20px 0 0; */
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f4f4f7;
+  text-align: start;
+}
+
