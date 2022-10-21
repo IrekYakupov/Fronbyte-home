@@ -69,6 +69,10 @@ body {
   color: #f4f4f7;
 }
 
+.b-list-item__link:hover {
+  text-decoration: underline;
+}
+
 .b-language-switcher {
   display: flex;
   margin-left: auto;
@@ -85,7 +89,6 @@ body {
 
 .b-button-wrap:hover {
   border-width: 1px;
-  /* transition: border-width 2s ease-in; */
 }
 
 .b-button-language {
@@ -98,8 +101,7 @@ body {
 }
 
 .b-our-concept {
-  width: 780px;
-  margin: 0 auto 79px;
+  padding: 0 200px 79px;
 }
 
 .b-our-concept__direction {
@@ -112,7 +114,7 @@ body {
 }
 
 .b-our-concept__goal {
-  width: 671px;
+  padding-right: 108px;
   font-size: 20px;
   line-height: 1.5;
   color: #f4f4f7;
@@ -134,28 +136,22 @@ body {
   color: #f4f4f7;
 }
 
-/* .footer__connection {
-  background-color: #64cae1;
-} */
-
 .b-container__light {
   background-color: #ffffff;
   padding: 90px 200px 137px;
 }
 
 .b-our-approach {
-  width: 780px;
   font-size: 60px;
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -0.75px;
   color: #2d2d42;
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
 }
 
 .b-advantage {
-  width: 780px;
-  margin: 0 auto 85px;
+  margin-bottom: 85px;
   font-size: 30px;
   line-height: 1.33;
   color: #2d2d42;
@@ -211,12 +207,11 @@ body {
 }
 
 .b-our-sevice__header {
-  width: 780px;
   font-size: 60px;
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -0.75px;
-  margin: 0 auto 75px;
+  margin-bottom: 75px;
   color: #c0c6c8;
 }
 
@@ -249,20 +244,18 @@ body {
 }
 
 .b-portfolio__header {
-  width: 780px;
+  margin: 0 0 25px 200px;
   font-size: 60px;
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -0.75px;
-  margin: 0 auto 25px;
   color: #2d2d42;
 }
 
 .b-portfolio__concept {
-  width: 780px;
+  margin: 0 0 90px 200px;
   font-size: 30px;
   line-height: 1.33;
-  margin: 0 auto 90px;
   color: #2d2d42;
 }
 
@@ -289,7 +282,6 @@ body {
 .b-sticker__name {
   text-transform: uppercase;
   padding: 40px;
-  width: 300px;
   font-size: 13px;
   font-weight: 900;
   line-height: 1.54;
@@ -297,7 +289,6 @@ body {
 }
 
 .b-sticker__discription {
-  width: 300px;
   font-size: 30px;
   line-height: 1.33;
   padding: 0 40px;
@@ -352,35 +343,34 @@ body {
   color: #2d2d42;
 }
 
-.b-inside {
+/* .b-inside {
   position: relative;
-}
+} */
 
 .b-sticker__name--our-name {
   padding: 40px 40px 50px;
 }
 
+/* начинается блок инсайд */
+
 .b-inside__header {
-  width: 780px;
   font-size: 60px;
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -0.75px;
-  margin: 0 auto 25px;
+  margin: 0 0 25px 200px;
   color: #2d2d42;
 }
 
 .b-inside__concept {
-  width: 780px;
   font-size: 30px;
   line-height: 1.33;
-  margin: 0 auto 90px;
+  margin: 0 0 90px 200px;
   color: #2d2d42;
 }
 
 .b-inside__img {
-  display: block;
-  margin-left: auto;
+  margin-left: 200px;
 }
 
 .b-sticker--inside {
@@ -390,22 +380,42 @@ body {
 }
 
 .b-sticker__name--inside {
-  padding: 40px 0 30px;
+  padding: 40px 100px 30px 0;
 }
 
 .b-sticker__discription--inside {
-  padding: 0 0 55px 0;
+  padding: 0 60px 55px 0;
 }
 
-.b-inside__svg {
+.b-slider {
+  width: 400px;
+  background-color: #f4f4f7;
+}
+
+.b-slider__name {
+  text-transform: uppercase;
+  /* padding: 40px; */
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.54;
+  letter-spacing: 1.73px;
+}
+
+.b-slider__discription {
+  font-size: 30px;
+  line-height: 1.33;
+  /* padding: 0 40px; */
+}
+
+.b-slider__logo {
   width: 50px;
   height: 26px;
 }
 
-.b-slider {
+.b-slider__slide {
   display: flex;
-  position: absolute;
-  bottom: 1px;
+  /* position: absolute; */
+  /* bottom: 1%; */
 }
 
 .b-slider__item {
@@ -424,6 +434,8 @@ body {
 .b-slider__item--selected {
   background-color: #2d2d42;
 }
+
+/* заканчивается блок инсайд */
 
 .b-footer {
   background-color: #000000;
