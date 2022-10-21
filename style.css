@@ -454,7 +454,6 @@ body {
   color: #2d2d42;
 }
 
-
 .b-news__headline {
   margin-bottom: 20px;
   font-size: 20px;
@@ -464,9 +463,12 @@ body {
 
 .b-footer {
   background-color: #000000;
+  position: relative;
+}
+
+.b-footer__information {
   padding-top: 100px;
   padding-left: 200px;
-  position: relative;
 }
 
 .b-img-map {
@@ -527,7 +529,7 @@ body {
 
 .b-footer__address {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 
 .b-address__norway,
@@ -551,10 +553,22 @@ body {
   color: #64cae1;
 }
 
+.b-footer__connection {
+  display: flex;
+}
+
 .b-call-button__footer {
   background-color: #64cae1;
 }
 
 .b-button--footer {
   background-color: #64cae1;
+}
+
+.b-footer__signature {
+  margin: 25px 102px 25px 118px;
+  opacity: 0.5;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f4f4f7;
 }
